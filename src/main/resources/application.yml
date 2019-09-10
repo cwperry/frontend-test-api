@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: "FrontEndApi"
+logging:
+  level:
+    com.employbridge: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} %5p [${spring.application.name},%X{X-B3-TraceId:-}] %m%n"
