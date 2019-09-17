@@ -2,7 +2,7 @@
     <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
     <springProperty scope="context" name="springAppName" source="spring.application.name"/>
     <appender name="GELF" class="de.siegmar.logbackgelf.GelfUdpAppender">
-        <graylogHost>graylog</graylogHost>
+        <graylogHost>ec2-3-83-107-192.compute-1.amazonaws.com</graylogHost>
         <graylogPort>12201</graylogPort>
         <maxChunkSize>508</maxChunkSize>
         <useCompression>true</useCompression>
